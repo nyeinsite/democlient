@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/style/login.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="./resources/images/admin.png" id="icon" alt="User Icon" />
+
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" onclick="myFunction()" href="#">Go to the Site</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    function myFunction() {
+        let name = document.getElementById('login').value
+        let password = document.getElementById('password').value;
+        console.log(name + " " + password);
+        if (name == "admin" && password == "admin") {
+
+            location.replace("show.html")
+
+        }
+    }
+
+</script>
+
+</html>
